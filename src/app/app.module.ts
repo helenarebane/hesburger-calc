@@ -8,11 +8,13 @@ import {MatInputModule} from "@angular/material/input";
 import {ReactiveFormsModule} from "@angular/forms";
 import {MatDividerModule} from "@angular/material/divider";
 import {FoodCardComponent} from "./component/food-card.component";
+import {DipCardComponent} from "./component/dip-card.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    FoodCardComponent
+    FoodCardComponent,
+    DipCardComponent
   ],
   imports: [
     BrowserModule,
