@@ -8,7 +8,6 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'hesburger-calc';
   total = 0;
-  nrOfDips = 0;
 
   orderList = [
     {name: 'VEKE Burger', kcal: 450},
