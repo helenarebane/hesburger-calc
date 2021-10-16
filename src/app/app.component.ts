@@ -10,7 +10,7 @@ export class AppComponent {
   total = 0;
 
   orderList = [
-    {name: 'VEKE Burger', kcal: 450},
+    {name: 'VEKE burger', kcal: 450},
     {name: 'Friikartulid (väiksed)', kcal: 280},
     {name: 'Friikartulid (suured)', kcal: 392},
     {name: 'Röstkartul', kcal: 203},
