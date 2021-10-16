@@ -9,7 +9,7 @@
 
 .flex-container::after {
   content: "";
-  background-image: url("src/Symbol 01.jpg");
+  background-image: url("../assets/background.png");
   opacity: 0.75;
   top: 0;
   left: 0;
