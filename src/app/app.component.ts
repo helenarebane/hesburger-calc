@@ -8,6 +8,8 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'hesburger-calc';
   total = 0;
+  nrOfDips = 0;
+
   orderList = [
     {name: 'VEKE Burger', kcal: 450},
     {name: 'Friikartulid (väiksed)', kcal: 280},
@@ -28,8 +30,7 @@ export class AppComponent {
   ];
 
   calculateSum(childSum: number[]) {
-    console.log(childSum[0], childSum[1]);
+    console.log(childSum[0], childSum[1], childSum);
     this.total += Number(childSum[1]) - childSum[0];
   }
-
 }

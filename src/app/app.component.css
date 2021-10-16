@@ -8,6 +8,19 @@
   gap: 2em;
 }
 
+.flex-container::after {
+  content: "";
+  background-image: url("Symbol 01.jpg");
+  opacity: 0.75;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 10vw;
+  position: absolute;
+  z-index: -1;
+}
+
 .item {
+  min-height: 5vh;
   flex-grow: 4;
 }

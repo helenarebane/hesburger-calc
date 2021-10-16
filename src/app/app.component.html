@@ -41,52 +41,35 @@
 
 
   <!-- The Calculator Section -->
+  <!-- Title -->
   <div class="w3-container w3-content w3-center w3-padding-64" id="calculator">
-    <h2 class="w3-wide">VEGAN KALORIKALKULAATOR HESBURGERLE</h2>
+    <h2 class="w3-wide">VEGAN KALORIKALKULAATOR HESBURGERI TELLIMUSTELE</h2>
     <p class="w3-opacity"><i>Sisesta tellimuse info ja kalkulaator leiab kalorisisalduse.</i></p><br/>
-    <!-- First row -->
+
+    <!-- Calculator fields -->
     <div class="flex-container">
       <div style="margin-bottom:4em;"
            *ngFor="let item of orderList">
         <food-card [name]="item.name" [kcal]="item.kcal" (valueChange)=calculateSum($event)></food-card>
       </div>
+      <mat-divider></mat-divider>
+      <div style="margin-bottom:4em;"
+           *ngFor="let item of dipList">
+        <dip-card [name]="item.name" [kcal]="item.kcal" (valueChange)=calculateSum($event)></dip-card>
+      </div>
     </div>
     <mat-divider></mat-divider>
-    <strong><h5>Kokku: {{total}} kcal</h5></strong>
+    <h5>Kokku: <strong>{{total}}</strong> kcal</h5>
   </div>
 
 </div>
 <!-- End Page Content -->
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <p class="w3-medium">Background image by <a
+    href="https://all-free-download.com/free-vector/download/fast-food-icons-colored-flat-sketch_6848476.html"
+    target="_blank">All Free Download</a></p>
 </footer>
 
-<script>
-  // Automatic Slideshow - change image every 4 seconds
-  let myIndex = 0;
-  carousel();
-
-  function carousel() {
-    let i;
-    const x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i]["style"].display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {
-      myIndex = 1
-    }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 4000);
-  }
-
-</script>
 </body>
 </html>
