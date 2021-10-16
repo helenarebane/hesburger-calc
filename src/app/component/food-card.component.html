@@ -1,0 +1,18 @@
+<div class="item">
+  <strong><h5>{{name}}</h5></strong>
+  <input
+    type="number"
+    matInput
+    [defaultValue]=0
+    min=0
+    (change)="onChange($event)"
+  />
+  <div *ngIf="sum > 0; else zero">
+    <strong><h5>{{sum}} kcal</h5></strong>
+  </div>
+
+  <ng-template #zero>
+    <strong><h5>0 kcal</h5></strong>
+  </ng-template>
+
+</div>
