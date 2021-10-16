@@ -10,7 +10,7 @@
 
 .flex-container::after {
   content: "";
-  background-image: url("Symbol 01.jpg");
+  background-image: url("src/Symbol 01.jpg");
   opacity: 0.75;
   top: 0;
   left: 0;
